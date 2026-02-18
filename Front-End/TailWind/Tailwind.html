@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="Tailwind.css">
+</head>
+<body>
+    <div class="form-card">
+        <form method = "post" onsubmit="return validate()" class="login-form">
+            <h3>Login</h3>
+            <label class="_email">Email</label>
+                <input type="email" name="email" id="email" class="email-input" required>
+            <br>
+            <label>Password</label>
+                <input type="password" name="password" id="password" class="password-input" required><br>
+            <div class="sub">
+                <input type="submit" value="Login" class="submit-login">
+                <input type="reset" value="Reset" class="reset-login">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

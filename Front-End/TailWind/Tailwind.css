@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.form-card {
+    @apply 
+}
+
+.login-form {
+    @apply
+}
+
+._email {
+    @apply
+}
+
+.email-input {
+    @apply
+}
+
+.password-input {
+    @apply
+}
+
+.submit-login {
+    @apply
+}
+
+.reset-login {
+    @apply
+}

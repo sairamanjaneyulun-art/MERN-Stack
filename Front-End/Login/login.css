@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    box-shadow: none;
+    background-image: url();
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    margin: 8rem;
+    margin-left: 26rem;
+    padding: 3rem;
+    width: 25rem;
+    border-radius: 3rem;
+}
+
+.login-form {
+    border-color: blue;
+}
+
+._email {
+    margin-left: 1.7rem;
+}
+
+.email-input {
+    margin: 1rem;
+    border-color: aqua;
+    width: 13rem;
+    height: 1.5rem;
+    border-radius: .5rem;
+}
+
+.password-input {
+    margin: 1rem;
+    border-color: aqua;
+    width: 13rem;
+    height: 1.5rem;
+    border-radius: .5rem;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.submit-login {
+    height: 3rem;
+    width: 5.2rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    margin: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.reset-login {
+    width: 5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}

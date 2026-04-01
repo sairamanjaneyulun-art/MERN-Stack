@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- Inline CSS -->
     <style>
-        a {
+        .Example {
             display: flex;
             border: 2px solid skyblue;
             border-radius: 2rem;
@@ -10,24 +11,176 @@
             margin: 10rem;
             width: 135px;
             text-decoration: none;
-            color: rgba(231, 99, 51, 0.4);
+            color: rgba(231, 99, 51, 0.4); /* HTML Colors */
             background-color: beige;
         }
 
-        a:focus {
+        .Example:focus {
             border: 2px solid grey;
             color: black;
             background-color: aqua;
             opacity: 30%;
+        }
+
+        .example_link:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .example_link:visited{
+            color: darkblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .example_link:hover{
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .example_link:active{
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .link_button:link, .link_button:visited {
+            background-color: blueviolet;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .link_button:hover, .link_button:active {
+            background-color: blue;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
 </head>
-<body>
+<p>
     <!-- HTML Links - Hyperlinks -->
-    <!-- HTML links are hyperlinks -->
-    <a href="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp">Click to see Image</a>
+    <!-- 
+        i. HTML links are hyperlinks.
+        ii. You can click on the link & jump to another document.
+        iii. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+    -->
+    <a href="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp" class="Example">Click to see Image</a>
+
+    <!-- The HTML Link - The target Attribute. -->
+    <!-- 
+        The target attributes specifies where to open the linked document.:
+            1. _self - Default. Opens the document in the same window/tab as it was clicked.
+            2. _blank - Opens the document in a new window or tab.
+            3. _parent - Opens the document in the parent frame.
+            4. _top - Opens the document in the full body of the window.
+    -->
+            <!-- Try & See for yourself -->
+            <a href="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp" target="_blank">Click to see Image</a><br><br>
+
+        <!-- HTML Links - Using an image as a link -->
+        <a href="/Images/SreeLeela.jpg">
+            <img src="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp" alt="Demon Slayer" width="550" height="300">
+        </a><br><br>
+
+        <!-- Link to an Email Address: Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+        <a href="mailto:nsairamanjaneyulu14@gmail.com">Send Email</a><br><br>
+
+        <!-- 
+            Button as a link:
+            1. To use an HTML button as a link, you have to add some JavaScript code.
+            2. JavaScript allows you to specify what happens at certain events, such as a click of a button:
+        -->
+        <button onclick="document.location = '/Images/SreeLeela.jpg'">Demon Slayer</button><br><br>
+
+        <!-- Link Titles: The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a><br><br>
+
+        <!-- Absolute URLs -->
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML tutorial</a><br><br>
+
+        <!-- Relative URLs -->
+        <a href="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp">Relative URL</a><br><br>
+
+        <!-- HTML links - Different Colors: An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active. -->
+        <!-- Example: Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will become red and underlined: -->
+        <a href="/Images/SreeLeela.jpg" class="example_link">Click Here</a><br><br>
+
+        <!-- Link Button -> A link can also be styled as a button, by using CSS: -->
+        <a href="/Images/tanjiro-kamado-de-guardianes-de-la-noche-4440.webp" class="link_button">Link Button</a><br><br>
+
+        <p><a href="#c7">Jump to Chapter 7</a></p>
+        <p><a href="#c21">Jump to Chapter 21</a></p>
+
+        <h2>Chapter 1</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 2</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 3</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 4</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 5</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 6</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2 id="c7">Chapter 7</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 8</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 9</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 10</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 11</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 12</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 13</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 14</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 15</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 16</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 17</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 18</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 19</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 20</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2 id="c21">Chapter 21</h2>
+        <p>This chapter explains ba bla bla</p>
+
+        <h2>Chapter 22</h2>
+        <p>This chapter explains ba bla bla</p>
 </body>
 </html>
